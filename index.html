@@ -1,0 +1,251 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Fiesto Fill</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Baloo+Bhai|Bree+Serif&display=swap" rel="stylesheet">
+</head>
+
+
+<body>
+
+    <nav id="navbar" class="sticky-top">
+        <div id="logo">
+            <!-- <img src="icon.png" alt=""> -->
+            <h1>Fiest o Fill</h1>
+        </div>
+        <ul>
+            <li class="item"><a href="index.html">Home</a></li>
+            <li class="item"><a href="index.html">About us</a></li>
+            <li class="item"><a href="index.html">Contact us</a></li>
+            <button class="btn item" data-bs-target="#add-recipe" data-bs-toggle="modal">Add Recipe</button>
+        </ul>
+        <div class="right">
+        </div>
+        </div>
+    </nav>
+
+
+ <div class="modal" id="add-recipe" aria-hidden="true" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h2>Add recipe</h2>
+                    <button type="button" class="btn btn-light close" data-bs-dismiss="modal" style="font-size: 2rem;">
+                        &times;
+                    </button>
+                </div>
+                <form action="" id="add-post-form" class="" enctype="multipart/form-data">
+                    <div class="modal-body">
+                        <div class="form-group">
+                            <label>Title</label>
+                            <div class="input-group mb-3 input-group-lg" for="username">
+                                <input type="text" id="title" class="form-control title-text-1"
+                                    style="font-size: medium;" placeholder="Enter title here" required>
+                            </div>
+                            <label>Ingredients</label>
+                            <div class="input-group mb-3 input-group-lg">
+                                <input type="text" id="ingredients" class="form-control title-text-1" style="font-size: medium;"
+                                    placeholder="Enter ingredients here" required>
+                            </div>
+                            <div class="custom-file">
+                                <label class="custom-file-label" for="images">Image file</label>
+                                <input type="file" class="custom-file-input" name="image" id="image"
+                                    required="required" />
+                            </div>
+                            <div class="col-12">
+                                <label for="desc" class="form-label">Enter Description</label>
+                                <textarea class="form-control" name="description" id="desc" rows="4" placeholder="Enter description here"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <div>
+                            <button type="submit" id="add-btn" class="btn btn-sm btn-secondary"
+                                style="padding:.2rem 1rem; font-size: 1rem; margin: auto;"
+                                data-bs-dismiss="modal">Add</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <section id="home">
+        <h1 class="h-primary">Welcome to Fiest o Fill</h1>
+        <p>Here we are with amazing recipes to make your tummy everyday happy. We make sure that you feed yourself with
+            correct amount of items required to make you and your family healthy. We are here to provide you with every
+            variety of food item be it chinese or continential.</p>
+        <p>Visit our website everyday to see daily special recipes !!!</p>
+    </section>
+    <section class="more_recipe">
+        <h1 class="h-tertiary center">Some more recipes for you</h1>
+        <div id="recipes-container">
+           
+        </div>
+    </section>
+    <section id="about-us">
+        <h1 class="h-primary center">About Us</h1>
+        <div id="about">
+            <div class="about-item">
+                <img src="about-us.png" alt="">
+                <p>
+                    Fiest o Fill is here to provide you and your family with healthy food everyday
+                    It has been a year since we have been providing variety of dishes to full fill your apetite. Various
+                    of options are available for sweet, savoury and continential items. If you have not visited our
+                    website do it now what are you waiting for and cook some amazing dishes with us. Lorem ipsum, dolor
+                    sit amet consectetur adipisicing elit. A, quisquam! Lorem ipsum dolor sit amet consectetur
+                    adipisicing elit. Illo ipsum aliquam ab minus perspiciatis! If you have any queries please do ask
+                    us.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your contact number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <a href="#" class="btn btn-dark">Submit</a>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.FiestoFill.com. All rights reserved!
+        </div>
+    </footer>
+
+    <script>
+
+        const getRecipes = async () => {
+            try {
+                const response = await fetch("https://fiestofill.herokuapp.com/recipe/");
+                const { data } = await response.json();
+                console.log(data);
+
+                let innerHTML = "";
+                data.forEach((recipeItem) => {
+                    innerHTML += `
+                    <div class="box center w30">
+                        <img src="${recipeItem.image}" alt="">
+                        <h2>${recipeItem.title}</h2>
+                        <a href="recipe.html?id=${recipeItem._id}" class="btn btn-dark">Read more</a>
+                        <button id="${recipeItem._id}" onclick="deleteRecipe()" class="btn btn-danger">Delete</a>
+                    </div>
+                    `;
+                })
+
+                document.getElementById("recipes-container").innerHTML = innerHTML;
+
+            } catch (e) {
+                console.log(e);
+            }
+        };
+
+        getRecipes();
+
+        document.getElementById("add-btn").addEventListener("click", async function (event) {
+            event.preventDefault();
+            console.log("Hello");
+            const title = document.getElementById("title").value;
+            const ingredients = document.getElementById("ingredients").value;
+            const recipe = document.getElementById("desc").value;
+            var fileInput = document.getElementById('image');
+            var reader = new FileReader();
+            reader.readAsDataURL(fileInput.files[0]);
+            reader.onload = async function () {
+                //console.log(reader.result);//base64encoded string
+                try {
+                    const response = await fetch("https://fiestofill.herokuapp.com/recipe", {
+                        method: "POST",
+                        mode: "cors",
+                        body: new URLSearchParams({
+                            title: title,
+                            ingredients: ingredients,
+                            recipe:recipe,
+                            image: reader.result
+                        }),
+                    });
+                    console.log(response);
+
+                } catch (e) {
+                    console.log(e);
+                }
+            };
+            reader.onerror = function (error) {
+                console.log('Error: ', error);
+            };
+        })
+
+
+        const deleteRecipe = async (e) => {
+
+            const id = window.event.target.id;
+            try {
+                const response = await fetch(`https://fiestofill.herokuapp.com/recipe/${id}`, {
+                    method: "DELETE",
+                    mode: "cors",
+                });
+                console.log(response);
+                window.location.replace("index.html");
+            } catch (e) {
+                console.log(e);
+            }
+        } 
+
+    </script>
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
+
+
+
+</body>
+
+</html>
